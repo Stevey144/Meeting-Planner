@@ -19,11 +19,15 @@ from django.urls import path
 from website.views import welcome
 from website.views import date
 from website.views import about
+from meetings.views import detail, rooms_list
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('welcome.html',welcome),
+    path('welcome.html',welcome, name="welcome"),
     path('',welcome),
     path('date',date),
-    path('about',about)
+    path('about',about),
+    path('meetings/<int:id>', detail, name="detail"),
+    path('rooms', rooms_list, name="rooms"),
+    
 ]

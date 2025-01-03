@@ -8,7 +8,7 @@ class Room(models.Model):
     
     
     def __str__(self):
-        return f"{self.name} at {self.room_number} on {self.floor}"
+        return f"{self.name} : room {self.room_number} on floor {self.floor}"
     
 
 # Create your models here.
