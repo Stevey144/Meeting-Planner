@@ -23,7 +23,7 @@ from website.views import about
 from meetings.views import detail, rooms_list
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls, name="admin"),
     path('welcome.html',welcome, name="welcome"),
     path('',welcome),
     path('date',date),
