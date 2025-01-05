@@ -49,6 +49,10 @@
     margin:0px 20px 5px 20px;
     font-size:20px;
 }
+.logo h2 a{
+    text-decoration: none !important;
+    color:white;
+}
 
 .nav ul li a:hover{
     background-color:darkcyan;
