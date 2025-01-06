@@ -14,7 +14,12 @@ def detail(request, id):
 def rooms_list(request):
     return render(request, "meetings/rooms_list.html", {"rooms" : Room.objects.all()})
 
-MeetingForm = modelform_factory(Meeting, exclude=[])
+#<---! important -->
+# MeetingForm = modelform_factory(Meeting, exclude=[])
+# this is an auto generated python form using the meeting model class objects
+#use this if you dont want to set the attribute for the form manually, you just want python model class to do the magic!
+
+#<---! important -->
 
 def new(request):
     if request.method == "POST":
