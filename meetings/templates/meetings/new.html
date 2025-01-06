@@ -27,7 +27,8 @@ Add New Meeting
         </div>
     </div>
 
-    <div class="container mt-5">
+ <div class="container mt-5 d-flex align-items-center justify-content-center vh-100">
+     <div>
         <h1>Create a New Meeting</h1>
         <form method="post">
             {% csrf_token %}
@@ -48,12 +49,12 @@ Add New Meeting
                     {% endif %}
                 </div>
             {% endfor %}
-            <button type="submit" class="btn btn-primary">Create Meeting</button>
-        </form>
+             <button type="submit" class="btn btn-primary">Create Meeting</button>
+         </form>
     </div>
-       
+</div>
 
-        </div>
+ </div>
 
 
 {% endblock container-content %}
