@@ -1,7 +1,9 @@
 from django.forms import modelform_factory
-from django.shortcuts import render,get_object_or_404
+from django.shortcuts import redirect, render,get_object_or_404
 
 from .models import Meeting, Room
+
+from .forms import MeetingForm
 
 
 def detail(request, id):
@@ -15,5 +17,12 @@ def rooms_list(request):
 MeetingForm = modelform_factory(Meeting, exclude=[])
 
 def new(request):
-    form = MeetingForm()
+    if request.method == "POST":
+        form = MeetingForm(request.POST)
+        if form.is_valid():
+            form.save()  # Save the meeting to the database
+            return redirect('welcome')  # Adjust this URL as needed
+    else:
+        form = MeetingForm()  # Render an empty form for GET requests
+
     return render(request, "meetings/new.html", {"form": form})
