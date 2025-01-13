@@ -4,7 +4,7 @@
 }
 
 .container{
-    width: 900px;
+    width: 900px !important;
     min-height: 400px;
     margin: 0 auto;
     background-color: #eee;
@@ -61,7 +61,7 @@
 }
 
 .content{
-    width:300px;
+    width:800px !important;
     margin:auto;
     min-height:200px !important;
 }
@@ -83,4 +83,7 @@
 .room-list{
     font-size:30px;
     margin:40px !important;
+}
+.meeting-table-text{
+    font-size: 20px !important;
 }
