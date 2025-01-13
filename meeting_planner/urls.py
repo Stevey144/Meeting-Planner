@@ -28,8 +28,10 @@ urlpatterns = [
     path('',welcome),
     path('date',date),
     path('about',about),
+    #use line 34 to include relevant links from other route instead of 32 and 33
     # path('meetings/<int:id>', detail, name="detail"),
     # path('rooms', rooms_list, name="rooms"),
     path('meetings/', include('meetings.urls'))
+    
     
 ]

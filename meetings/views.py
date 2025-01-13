@@ -31,3 +31,10 @@ def new(request):
         form = MeetingForm()  # Render an empty form for GET requests
 
     return render(request, "meetings/new.html", {"form": form})
+
+
+def delete(request, id):
+   meeting = get_object_or_404(Meeting,pk=id) 
+   meeting.delete()
+   
+   return redirect('welcome')
