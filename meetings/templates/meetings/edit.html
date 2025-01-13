@@ -18,12 +18,12 @@
                 <ul>
                     <li><a href="{% url 'rooms' %}">View Rooms</a></li>
                     <li><a href="{% url 'admin:index' %}">Admin Panel</a></li>
-                    <li><a href="">Add New Meeting</a></li>
+                    <li><a href="{% url 'new' %}">Add New Meeting</a></li>
                 </ul>
             </div>
     </div>
 
-  <div class="container mt-5 d-flex align-items-center justify-content-center vh-100">
+  <div class="mt-5 d-flex align-items-center justify-content-center vh-100">
     <div>
         <h1>Edit Meeting</h1>
         <form method="POST">
