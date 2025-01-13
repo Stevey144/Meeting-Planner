@@ -38,3 +38,19 @@ def delete(request, id):
    meeting.delete()
    
    return redirect('welcome')
+
+def edit(request, id):
+    meeting = get_object_or_404(Meeting, pk=id)
+
+    if request.method == 'POST':
+        form = MeetingForm(request.POST, instance=meeting)
+        if form.is_valid():
+            form.save() 
+            return redirect('detail', id=meeting.id)  
+    else:
+        form = MeetingForm(instance=meeting)
+
+    return render(request, 'meetings/edit.html', {'form': form, 'meeting': meeting})
+     
+        
+      

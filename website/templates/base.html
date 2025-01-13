@@ -58,7 +58,7 @@
                 <th scope="row">{{meeting.id}}</th>
                 <td class="meeting-table-text">{{meeting.title}}</td>
                 <td><a href="{% url 'detail' meeting.id %}" style="font-size:30px;"><button class="btn btn-primary">View Details</button></a></td>
-                <td><button class="btn btn-primary">Update</button></td>
+                <td><a href="{% url 'edit' meeting.id %}"><button class="btn btn-primary">Update</button></a></td>
                 <td>
                     <form action="{% url 'delete' meeting.id %}" method="POST" style="display:inline;">
                         {% csrf_token %}
