@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family: 'Khand', sans-serif;
+    font-family: 'Khand', sans-serif !important;
 }
 
 .container{
