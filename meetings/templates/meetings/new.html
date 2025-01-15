@@ -27,9 +27,12 @@ Add New Meeting
         </div>
     </div>
 
- <div class="mt-5 d-flex align-items-center justify-content-center vh-100">
-     <div>
-        <h1>Create a New Meeting</h1>
+    <div class="meeting-text">
+    <h1 style="display:flex; margin-top:40px !important;"> Create A New Meeting</h1>
+    </div>
+
+
+     <div class="form-elements">
         <form method="post">
             {% csrf_token %}
             {% for field in form %}
@@ -52,7 +55,6 @@ Add New Meeting
              <button type="submit" class="btn btn-primary">Create Meeting</button>
          </form>
     </div>
-</div>
 
  </div>
 

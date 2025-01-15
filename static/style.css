@@ -53,17 +53,27 @@
     text-decoration: none !important;
     color:white;
 }
-
-.nav ul li a:hover{
-    background-color:darkcyan;
-    border-radius:20px;
-    padding:30px !important;
+.form-elements{
+    width: 400px !important;
+    margin: 0 auto;
+    padding: 10px !important;
+}
+.form-elements h1{
+    text-align: center;
+    font-family: Khand;
+    width: 100%;
+    margin-bottom: 20px !important;
 }
 
 .content{
     width:800px !important;
     margin:auto;
     min-height:200px !important;
+}
+
+.form-element{
+    width: 300px !important;
+    margin: 0 auto;
 }
 
 .footer{
@@ -86,4 +96,117 @@
 }
 .meeting-table-text{
     font-size: 20px !important;
+}
+.meeting-title{
+    width: 100% !important;
+    height: 80px;
+}
+.meeting-title h1{
+    display: inline-block !important;
+}
+
+.meeting-text{
+    width:400px;
+    margin:0 auto;
+}
+
+
+@media only screen and (min-width:370px) and (max-width:602px){
+    .container{
+        width: 100% !important;
+        background-color: #eee !important;
+    }
+
+
+    .logo h2{
+    font-size:15px !important;
+    margin:7px 0px 5px 0px !important;
+    color:white;
+    }
+
+    .header .nav{
+        width: 70% !important;
+        padding: 0px !important;
+    }
+
+    .nav ul li a{
+        text-decoration:none;
+        color:white;
+        font-size:14px; 
+        margin: 5px !important;
+        display: flex !important;
+    }
+
+    .content{
+        width:100% !important;
+    }
+
+    .header{
+        margin-bottom: -40px !important;
+    }
+
+
+    .footer{
+        height:100px !important;
+    }
+
+
+}
+
+@media only screen and (min-width:350px) and (max-width:800px){
+
+    .container{
+        width: 100% !important;
+        background-color: #eee !important;
+    }
+
+
+    .logo h2{
+    font-size:15px !important;
+    margin:7px 0px 5px 0px !important;
+    color:white;
+    }
+
+    .header .nav{
+        width: 70% !important;
+        padding: 0px !important;
+    }
+
+    .header{
+        margin-bottom: -40px !important;
+    }
+
+    .nav ul li a{
+        text-decoration:none;
+        color:white;
+        font-size:14px; 
+        margin: 5px !important;
+        display: flex !important;
+    }
+
+    .content{
+        width:100% !important;
+    }
+
+    .footer{
+        height:100px !important;
+    }
+
+}
+
+@media only screen and (min-width:800px) and (max-width:900px){
+
+    .header{
+        margin-bottom: -40px !important;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+.nav ul li a:hover{
+    background-color:darkcyan;
+    border-radius:20px;
+    padding:30px !important;
+}
+
 }
