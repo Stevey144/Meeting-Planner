@@ -17,10 +17,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from meetings import views
 from website.views import welcome
 from website.views import date
 from website.views import about
-from meetings.views import detail, rooms_list
+from meetings.views import detail
 
 urlpatterns = [
     path('admin/', admin.site.urls, name="admin"),

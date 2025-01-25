@@ -48,7 +48,18 @@
     color:white;
     margin:0px 20px 5px 20px;
     font-size:20px;
+    color:white !important;
 }
+
+.container ul li a{
+    color:white !important;
+}
+
+.container a{
+    color:white !important;
+}
+
+
 .logo h2 a{
     text-decoration: none !important;
     color:white;
@@ -203,10 +214,9 @@
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1366px) {
-.nav ul li a:hover{
+.container nav ul li a:hover{
     background-color:darkcyan;
     border-radius:20px;
-    padding:30px !important;
+    padding:15px !important;
 }
-
 }

@@ -11,22 +11,6 @@ Add New Meeting
 
 {% block container-content %}
 
-<div class="container">
-
-    <div class="header">
-        <div class="logo">
-         <h2><a href="{% url 'welcome' %}">Meeting Planner </a></h2>
-        </div>
-
-        <div class="nav">
-            <ul>
-                <li><a href="{% url 'rooms' %}">View Rooms</a></li>
-                <li><a href="{% url 'admin:index' %}">Admin Panel</a></li>
-                <li><a href="">Add New Meeting</a></li>
-            </ul>
-        </div>
-    </div>
-
     <div class="meeting-text">
     <h1 style="display:flex; margin-top:40px !important;"> Create A New Meeting</h1>
     </div>
@@ -56,11 +40,4 @@ Add New Meeting
          </form>
     </div>
 
- </div>
-
-
 {% endblock container-content %}
-
-{% block js-link %}
-
-{% endblock js-link %}

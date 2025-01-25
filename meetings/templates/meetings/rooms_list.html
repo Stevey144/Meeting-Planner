@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block title %}
 Rooms
 {% endblock title %}
@@ -9,22 +11,6 @@ Rooms
 {% endblock bootstrap-link %}
 
 {% block container-content %}
-
-    <div class="container">
-
-        <div class="header">
-            <div class="logo">
-             <h2><a href="{% url 'welcome' %}">Meeting Planner </a></h2>
-            </div>
-    
-            <div class="nav">
-                <ul>
-                    <li><a href="{% url 'rooms' %}">View Rooms</a></li>
-                    <li><a href="{% url 'admin:index' %}">Admin Panel</a></li>
-                    <li><a href="{% url 'new' %}">Add New Meeting</a></li>
-                </ul>
-            </div>
-        </div>
 
         <div>
             <table class="table">
@@ -60,12 +46,4 @@ Rooms
 
        </div>
 
-    </div>
-
-
 {% endblock container-content %}
-
-{% block js-link %}
-
-{% endblock js-link %}
- 
